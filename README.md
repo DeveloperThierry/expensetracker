@@ -2,7 +2,7 @@
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 
-![Screenshot](/images/file.png)
+![Screenshot](/public/sign-in.png)
 
 ## Description
 A full-stack, AI-powered personal finance management application that helps users track income, expenses, and budgets with intelligent insights.
