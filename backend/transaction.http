@@ -1,0 +1,37 @@
+### Create Transaction
+POST http://localhost:8000/api/transactions
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
+
+{
+    "amount":8.50,
+    "type":"expense",
+    "categoryId":6,
+    "description":"Morning coffee",
+    "transactionDate":"2026-05-14"
+}
+
+### GET Transactions
+GET http://localhost:8000/api/transactions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
+
+
+### Filter Transactions
+GET http://localhost:8000/api/transactions?type=expense
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
+
+
+### Update Transaction
+PUT http://localhost:8000/api/transactions/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
+
+{
+    "amount":12,
+    "description":"Morning coffee + croissant"
+}
+
+
+### Delete Transaction
+DELETE http://localhost:8000/api/transactions/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
