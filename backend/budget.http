@@ -1,0 +1,24 @@
+### Create Budget
+POST http://localhost:8000/api/budgets
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
+
+{
+    "categoryId":6,
+    "amount":400,
+    "period":"monthly"
+}
+
+### List Budgets
+GET http://localhost:8000/api/budgets
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
+
+
+### Update Budgets
+PUT http://localhost:8000/api/budgets/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
+
+{
+    "amount":500
+}
