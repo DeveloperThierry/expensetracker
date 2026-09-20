@@ -206,8 +206,8 @@ const seed = async () => {
         console.log('');
         console.log('Demo data seeded successfully!');
         console.log('');
-        console.log('  Email:    alex@timetoprogram.com');
-        console.log('  Password: Test@1234');
+        console.log('  Email:    developerthierry@gmail.com');
+        console.log('  Password: Password2003');
         console.log('');
     } catch (error){
         await client.query('ROLLBACK');
