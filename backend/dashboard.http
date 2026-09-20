@@ -1,0 +1,14 @@
+### GET Dashboard Summary
+GET http://localhost:8000/api/dashboard/summary
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
+
+
+### GET Category Breakdown
+GET http://localhost:8000/api/dashboard/category-breakdown
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
+
+
+
+### GET Monthly Trend
+GET http://localhost:8000/api/dashboard/monthly-trend
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
