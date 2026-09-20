@@ -6,6 +6,7 @@ import categoryRoutes from './routes/categoryRoutes.js'
 import transactionRoutes from "./routes/transactionRoutes.js"
 import budgetRoutes from './routes/budgetRoutes.js'
 import dashboardRoutes from './routes/dashboardRoutes.js'
+import insightRoutes from './routes/insightRoutes.js'
 dotenv.config()
 
 const app = express()
@@ -23,6 +24,7 @@ app.use('/api/categories', categoryRoutes)
 app.use('/api/transactions', transactionRoutes)
 app.use('/api/budgets', budgetRoutes)
 app.use('/api/dashboard', dashboardRoutes)
+app.use('/api/insights', insightRoutes)
 
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`)

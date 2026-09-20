@@ -1,0 +1,31 @@
+
+### POST Gemini Insight
+POST http://localhost:8000/api/insights/generate
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
+
+{
+    "type":"monthly_summary"
+}
+
+
+
+### EGT Gemini Insight
+GET http://localhost:8000/api/insights
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
+
+
+### POST Gemini Transaction Insight
+POST http://localhost:8000/api/transactions/analyze
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E
+
+{
+    "transactionIds":[2]
+}
+
+
+
+### POST Gemini Budget Insight
+POST http://localhost:8000/api/budgets/analyze
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc4OTYxMTkxNCwiZXhwIjoxNzkwMjE2NzE0fQ.oej4a804mtivM-HLxy0pnj0jHlpg_XDZos2mrcMMd1E

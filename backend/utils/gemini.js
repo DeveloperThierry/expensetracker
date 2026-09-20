@@ -69,7 +69,7 @@ export const generateMonthlyInsight = async ({
 
     try {
         const response = await ai.models.generateContent({
-          model: 'gemini-2.5-flash',
+          model: 'gemini-3.6-flash',
           contents: prompt,
         });
         const cleaned = stripMarkdown(response.text);
@@ -116,7 +116,7 @@ Severity guide:
 
 try {
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3.6-flash',
       contents: prompt,
     });
     const cleaned = stripMarkdown(response.text);
@@ -155,7 +155,7 @@ export const generateSavingsTips = async ({ topCategories, monthlyIncome, curren
     Provide exactly 4 tips. Each tip should reference an actual category from the data and include a realistic montly savings amount`;
     try {
         const response = await ai.models.generateContent({
-          model: 'gemini-2.5-flash',
+          model: 'gemini-3.6-flash',
           contents: prompt,
         });
         const cleaned = stripMarkdown(response.text);
@@ -201,7 +201,7 @@ Return ONLY valid JSON (no markdown):
 
 try {
   const response = await ai.models.generateContent({
-    model: 'gemini-2.5-flash',
+    model: 'gemini-3.6-flash',
     contents: prompt,
   });
   const cleaned = stripMarkdown(response.text);
@@ -240,7 +240,7 @@ export const analyzeBudgetList = async ({ budgets, currency = 'USD' }) => {
   }`;
 
   try{
-    const response = await ai.models.generateContent({model:'gemini-2.5-flash', content:prompt})
+    const response = await ai.models.generateContent({model:'gemini-3.6-flash', contents:prompt})
     const cleaned = stripMarkdown(response.text)
     return JSON.parse(cleaned)
   }
